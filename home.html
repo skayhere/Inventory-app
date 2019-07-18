@@ -1,0 +1,29 @@
+
+  <ion-navbar>
+    <ion-title>
+      Inventory
+    </ion-title>
+  </ion-navbar>
+
+<ion-header>
+  
+    <!--<img src = "/assets/avatar1.png" class="avatar">-->
+    <div class = "col">
+      <h1 class = "title" style = "text-align:center">Inventory</h1>
+   </div>
+  </ion-header> 
+
+<ion-content padding>
+ <ion-grid>
+    <ion-row>
+    <ion-label>Enter Email ID : </ion-label>
+  <ion-input type="text" name="email" [(ngModel)]="email">Enter Email ID : </ion-input>
+</ion-row>
+<ion-row>  
+  <ion-label>Enter Password : </ion-label> 
+  <ion-input type="password" name="password" [(ngModel)]="password">Enter Password : </ion-input>
+</ion-row><ion-row>
+  <button ion-button (click)="Login($event)">Log In</button>
+        </ion-row>
+        </ion-grid>     
+</ion-content>
